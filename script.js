@@ -65,8 +65,20 @@ const readIcon=document.createElement('i');
  if (myLibrary[i].read===true){
    readIcon.classList.add('fas', 'fa-check', 'fa-lg');
    counter++;
+   //read switch ability
+   newRead.addEventListener('click',function(e){
+     let rowRead= this.parentNode.rowIndex-1;
+     myLibrary[rowRead].read=false;
+     showLibrary();
+   })
   } else {
     readIcon.classList.add('fas', 'fa-times', 'fa-lg');
+    newRead.addEventListener('click',function(e){
+      let rowRead= this.parentNode.rowIndex-1;
+      myLibrary[rowRead].read=true;
+      showLibrary();
+    })
+    
   }
   newRead.append(readIcon);
   bookRow.append(newRead);

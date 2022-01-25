@@ -73,7 +73,7 @@ th {
     font-size: 20px;
     color:#1f3e59;
 }
-.far{
+.far,.fas{
     cursor:pointer;
 }
 i{
