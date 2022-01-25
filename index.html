@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href='book_PNG2105.png' type="image/gif">
+    <script src="https://kit.fontawesome.com/7ed7b05ffc.js" crossorigin="anonymous"></script>
+</head>
+<body class=container>
+<div class=sidebar>
+    <i class="fas fa-book">Library</i>
+    <form id='form'>
+        <label id=label1 for="form1">What is the title of the book?
+            <input type='text'id=form1 name=form1>
+        </label>
+        <label for="form2">Who is the author of the book? 
+            <input type='text'id=form2 name=form2>
+        </label>
+        <label for="form3">How many pages are in the book?
+            <input type='text' id=form3 name=form3>
+        </label>
+    <div class=checkSupport> 
+        <label for="checkbox" id=checkboxLabel>
+            <input type='checkbox' id=checkbox name=checkbox>
+            I have read this Book!
+        </label>
+    </div>
+    <button type=submit id=buttonSide>Add New Book</button>
+    </form>
+    
+     <div id=name> </div>
+</div>
+<div class=main>
+    <div class=books>
+        <div class=mainTop id=read>Books Read:0</div>
+        <div class=mainTop id=unread>Books Unread:0</div>
+        <div class=mainTop id=total>Total Books:0</div>
+        <button class=mainTop id=but>Delete All</button>
+    </div>
+    <table class=table id=table>
+        <tr>
+        <th class=header id=title>Title</th>
+        <th class=header id=author>Author</th>
+        <th class=header id=pages>Pages</th>
+        <th class=header id=status>Status</th>
+        <th class=header id=removal>Removal</th>     
+        </tr>
+        <tbody id="table-body">
+            
+          </tbody>
+    </table>
+   
+</div>
+<script src="script.js"></script>
+</body>
+</html>
