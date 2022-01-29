@@ -10,11 +10,13 @@ const hollis=document.querySelector('#name');
 hollis.textContent=('Hollis Kuang ' + '© '+ `${new Date().getFullYear()}`)
 let myLibrary = [];
 //Object Constructor
-function Book(title,author,pages,read) {
+class Book{
+  constructor(title,author,pages,read) {
   this.title =title;
   this.author=author;
   this.pages=pages;
   this.read=read;
+}
 }
 // push book to library
 function addBookToLibrary(book) {
